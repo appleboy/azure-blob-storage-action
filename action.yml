@@ -16,7 +16,7 @@ inputs:
     required: true
   duration:
     description: "ExpiresAt duration"
-    default: "24h"
+    default: "1h"
 
 runs:
   using: "docker"
