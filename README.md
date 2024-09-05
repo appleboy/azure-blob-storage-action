@@ -1,6 +1,6 @@
 # azure-blob-storage-action
 
-azure blob storage action
+azure blob storage action for set expiration date for blob.
 
 ## Inputs
 
@@ -15,9 +15,9 @@ azure blob storage action
 ```yaml
 uses: actions/azure-blob-storage-action@v1.0.0
 with:
-  account_name: 'account_name'
-  account_key: 'account_key'
-  container_name: 'container_name'
-  blob_name: 'blob_name'
-  duration: '1h'
+  account_name: account_name
+  account_key: account_key
+  container_name: container_name
+  blob_name: blob_name
+  duration: 1h
 ```
