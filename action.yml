@@ -18,6 +18,14 @@ inputs:
     description: "ExpiresAt duration"
     default: "1h"
 
+outputs:
+  expire_at:
+    description: "ExpiresAt of the blob"
+  blob_url:
+    description: "URL of the blob"
+  expire_at_unix:
+    description: "ExpiresAt of the blob in Unix timestamp"
+
 runs:
   using: "docker"
   image: "Dockerfile"
