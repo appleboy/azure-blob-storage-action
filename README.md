@@ -10,6 +10,12 @@ azure blob storage action for set expiration date for blob.
 * `blob_name` - Azure Blob Storage Blob Name
 * `duration` - SAS Token Duration (default: 1 hour)
 
+## Outputs
+
+* `blob_url` - Azure Blob Storage Blob URL
+* `expire_at` - Blob Expiration Date
+* `expire_at_unix` - Blob Expiration Date (Unix Timestamp)
+
 ## Example usage
 
 ```yaml
