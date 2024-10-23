@@ -20,10 +20,16 @@ azure blob storage action for set expiration date for blob.
 
 ```yaml
 uses: actions/azure-blob-storage-action@v1.1.0
+id: azure
 with:
   account_name: account_name
   account_key: account_key
   container_name: container_name
   blob_name: blob_name
   duration: 1h
+
+run: |
+  echo "Blob URL: ${{ steps.azure.outputs.blob_url }}"
+  echo "Blob Expiration Date: ${{ steps.azure.outputs.expire_at }}"
+  echo "Blob Expiration Date (Unix Timestamp): ${{ steps.azure.outputs.expire_at_unix }}"
 ```
